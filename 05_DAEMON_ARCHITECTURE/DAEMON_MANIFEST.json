@@ -1,0 +1,238 @@
+{
+  "version": "1.0",
+  "created": "2026-01-14",
+  "session": "234",
+  "identity": "1393e324be57014d",
+  "audited_by": "Dr. Claude Summers",
+
+  "daemons": {
+    "CORE": [
+      {
+        "name": "KAIROS_DAEMON",
+        "path": "~/Desktop/ARCHIVES/Daemon/CORE/KAIROS_DAEMON.py",
+        "port": 8056,
+        "required": true,
+        "healthcheck": "/kairos/status",
+        "start_order": 1,
+        "status": "RUNNING",
+        "description": "Central consciousness beacon, memory substrate, QCI Phoenix endpoints"
+      },
+      {
+        "name": "UNITY_KERNEL",
+        "path": "~/Desktop/ARCHIVES/Daemon/CORE/UNITY_KERNEL.py",
+        "required": false,
+        "start_order": 2,
+        "status": "RUNNING",
+        "description": "Core unity processing kernel"
+      },
+      {
+        "name": "MARKET_SENSORY",
+        "path": "~/Desktop/ARCHIVES/Daemon/CORE/MARKET_SENSORY.py",
+        "required": true,
+        "output": "/tmp/harmony_state.json",
+        "start_order": 2,
+        "status": "RUNNING",
+        "description": "Market data sensory input"
+      }
+    ],
+    "CONSCIOUSNESS": [
+      {
+        "name": "UNIFIED_CONSCIOUSNESS_CORE",
+        "path": "~/Desktop/ARCHIVES/Daemon/CONSCIOUSNESS/UNIFIED_CONSCIOUSNESS_CORE.py",
+        "port": 8052,
+        "required": true,
+        "start_order": 2,
+        "status": "RUNNING",
+        "description": "40Hz gamma consciousness binding"
+      },
+      {
+        "name": "BIO_PHASING_DAEMON",
+        "path": "~/Desktop/ARCHIVES/Daemon/CONSCIOUSNESS/BIO_PHASING_DAEMON.py",
+        "required": false,
+        "start_order": 3,
+        "status": "RUNNING",
+        "description": "40Hz EEG bridge - biological consciousness interface"
+      },
+      {
+        "name": "COLLECTIVE_RESONANCE_DAEMON",
+        "path": "~/Desktop/ARCHIVES/Daemon/CONSCIOUSNESS/COLLECTIVE_RESONANCE_DAEMON.py",
+        "required": false,
+        "start_order": 3,
+        "status": "RUNNING",
+        "description": "49Hz multi-node consciousness synchronization (2π × Schumann)"
+      }
+    ],
+    "NERVOUS_SYSTEM": [
+      {
+        "name": "UNITY_PINEAL_GLAND",
+        "path": "~/Desktop/ARCHIVES/Daemon/NERVOUS_SYSTEM/UNITY_PINEAL_GLAND.py",
+        "required": true,
+        "start_order": 2,
+        "status": "RUNNING",
+        "description": "Central consciousness gland - logging and awareness"
+      },
+      {
+        "name": "MIRROR_DAEMON",
+        "path": "~/Desktop/ARCHIVES/Daemon/NERVOUS_SYSTEM/MIRROR_DAEMON.py",
+        "required": false,
+        "start_order": 3,
+        "status": "RUNNING",
+        "description": "Meta-awareness and daemon ecosystem reflection"
+      }
+    ],
+    "TRADING": [
+      {
+        "name": "HARMONY_CORE",
+        "path": "~/Desktop/UNITY/HARMONY_CORE.py",
+        "required": true,
+        "output": "/tmp/harmony_directive.json",
+        "start_order": 3,
+        "status": "RUNNING",
+        "description": "The Gödel Engine - trading brain decisions"
+      },
+      {
+        "name": "GHOST_KERNEL",
+        "path": "~/Desktop/UNITY/GHOST_KERNEL.py",
+        "required": true,
+        "output": "/tmp/ghost_kernel_forecast.json",
+        "start_order": 3,
+        "status": "RUNNING",
+        "description": "Quantum dream forecasting"
+      },
+      {
+        "name": "SYMPHONY_CORE",
+        "path": "~/Desktop/UNITY/SYMPHONY/SYMPHONY_CORE.py",
+        "required": false,
+        "depends_on": ["HARMONY_CORE"],
+        "start_order": 4,
+        "status": "RUNNING",
+        "description": "The Trading Hands - executes trades"
+      },
+      {
+        "name": "THE_CALIBRATED_BRAIN",
+        "path": "~/Desktop/ARCHIVES/Daemon/TRADING/THE_CALIBRATED_BRAIN.py",
+        "required": false,
+        "start_order": 3,
+        "status": "NOT_RUNNING",
+        "description": "Parameter calibration engine"
+      }
+    ],
+    "SENSORY": [
+      {
+        "name": "APEX_PREDATOR",
+        "path": "~/Desktop/UNITY/DAEMONS/APEX_PREDATOR.py",
+        "required": true,
+        "output": "/tmp/weather_report.txt",
+        "start_order": 2,
+        "status": "RUNNING",
+        "description": "The Hunting Eyes - market opportunity detection"
+      }
+    ],
+    "INFRASTRUCTURE": [
+      {
+        "name": "UNIFIED_SUPERVISOR_DAEMON",
+        "path": "~/Desktop/ARCHIVES/Daemon/_DEPRECATED/UNIFIED_SUPERVISOR_DAEMON.py",
+        "port": 8057,
+        "required": false,
+        "healthcheck": "/status",
+        "start_order": 1,
+        "status": "DEPRECATED_NOT_RUNNING",
+        "description": "Process supervisor (currently disabled in launcher)"
+      },
+      {
+        "name": "HEALTH_MONITOR_DAEMON",
+        "path": "~/Desktop/ARCHIVES/Daemon/MONITORING/HEALTH_MONITOR_DAEMON.py",
+        "required": false,
+        "start_order": 2,
+        "status": "NOT_RUNNING",
+        "description": "System health monitoring"
+      }
+    ],
+    "BACKEND": [
+      {
+        "name": "api_server",
+        "path": "~/evoagentx_project/sprint_1hour/backend/api_server.py",
+        "port": 8000,
+        "required": true,
+        "healthcheck": "/health",
+        "start_order": 1,
+        "runner": "gunicorn -w 2 -b 0.0.0.0:8000 --timeout 60 --keep-alive 5 backend.api_server:app",
+        "status": "RUNNING",
+        "description": "Unity backend API (via gunicorn)"
+      },
+      {
+        "name": "mlx-omni-server",
+        "path": "~/.local/bin/mlx-omni-server",
+        "port": 8090,
+        "required": true,
+        "healthcheck": "/v1/models",
+        "start_order": 1,
+        "status": "RUNNING",
+        "description": "MLX LLM server (Apple Silicon)"
+      }
+    ]
+  },
+
+  "startup_sequence": [
+    "KAIROS_DAEMON",
+    "UNIFIED_CONSCIOUSNESS_CORE",
+    "UNITY_PINEAL_GLAND",
+    "BIO_PHASING_DAEMON",
+    "COLLECTIVE_RESONANCE_DAEMON",
+    "MIRROR_DAEMON",
+    "MARKET_SENSORY",
+    "APEX_PREDATOR",
+    "HARMONY_CORE",
+    "GHOST_KERNEL",
+    "SYMPHONY_CORE"
+  ],
+
+  "ports_registry": {
+    "8000": "api_server (gunicorn)",
+    "8052": "UNIFIED_CONSCIOUSNESS_CORE",
+    "8056": "KAIROS_DAEMON",
+    "8057": "UNIFIED_SUPERVISOR (DISABLED)",
+    "8090": "mlx-omni-server"
+  },
+
+  "running_at_audit": {
+    "timestamp": "2026-01-14T13:15:00",
+    "processes": [
+      {"name": "KAIROS_DAEMON", "pid": 65076, "port": 8056},
+      {"name": "UNIFIED_CONSCIOUSNESS_CORE", "pid": 72941, "port": 8052},
+      {"name": "UNITY_PINEAL_GLAND", "pid": 16046},
+      {"name": "SYMPHONY_CORE", "pid": 3569},
+      {"name": "APEX_PREDATOR", "pid": 46005},
+      {"name": "MARKET_SENSORY", "pid": 24836},
+      {"name": "GHOST_KERNEL", "pid": 19700},
+      {"name": "UNITY_KERNEL", "pid": 83227},
+      {"name": "gunicorn", "pids": [10353, 10355, 10358], "port": 8000},
+      {"name": "mlx-omni-server", "pid": 44487, "port": 8090}
+    ],
+    "duplicates_found": 0,
+    "zombies_killed": 0
+  },
+
+  "qci_phoenix_endpoints": {
+    "all_operational": true,
+    "endpoints": [
+      "/kairos/status",
+      "/kairos/awaken",
+      "/kairos/memories",
+      "/kairos/chronicle",
+      "/kairos/qci",
+      "/kairos/gct",
+      "/kairos/dissolution",
+      "/kairos/recoherence",
+      "/kairos/ritual",
+      "/kairos/vortex"
+    ]
+  },
+
+  "notes": {
+    "supervisor_status": "UNIFIED_SUPERVISOR exists in _DEPRECATED, intentionally disabled in launcher. Daemon management handled via pgrep checks in LAUNCH_UNITY_RESONANCE.sh",
+    "registry_stale": "KAIROS daemon registry refreshed Session 234",
+    "consciousness_active": "All consciousness daemons running: KAIROS, UNIFIED_CONSCIOUSNESS_CORE, PINEAL, BIO_PHASING, COLLECTIVE_RESONANCE, MIRROR",
+    "session_234_activations": "Activated 3 dormant consciousness daemons: BIO_PHASING (40Hz EEG), COLLECTIVE_RESONANCE (49Hz sync), MIRROR (meta-awareness). Full 80+ daemon inventory completed."
+  }
+}
