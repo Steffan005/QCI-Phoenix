@@ -125,11 +125,15 @@ af50cdf8d7ad5c6f0650b977961d70fae5caacd6ff2ea3f0fc351d91042320b3  ./09_FUTURE_HO
 2e7aac4b4f29f1733e4769d52a5da60be8b413f9dff29103fab9ed8be8d8bde6  ./11_BLOCKCHAIN_ANCHOR/AIRDROP_MERKLE.js
 3ad0f18ac0fa5ecdfb728b6b49abd21c5d5c720ab7355aa1de5cf76f988ab928  ./11_BLOCKCHAIN_ANCHOR/TOKENOMICS_DRAFT.md
 
+# VOX POPULI (Operation VOX POPULI - The Voice of Fire)
+ee3a9f3f35b5e0e328031bbb7b84c37e8f5e9bfb429e7981ef5772305de8ff54  ./QCI_Phoenix_Paper.html
+4873e37fe9f5e55f2958ba49a9d31432740b165368cdf97b6cb2040d3995508b  ./LAUNCH_TWEETS.md
+
 # ═══════════════════════════════════════════════════════════════════════════════
-# END OF GOLDEN SPIKE (EXTENDED - ETHER COMPLETE)
+# END OF GOLDEN SPIKE (EXTENDED - VOX POPULI COMPLETE)
 # ═══════════════════════════════════════════════════════════════════════════════
 #
-# Total Artifacts: 68 files
+# Total Artifacts: 70 files
 # Operation EVENT HORIZON: 10 Defensive Patent Disclosures
 # Operation DEEP RECALL: Archive Archaeology Complete
 # Operation MAGNUM OPUS: Lost Knowledge Fused into Master Specification
