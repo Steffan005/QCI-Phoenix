@@ -304,55 +304,36 @@ async function main() {
     const generator = new AirdropMerkleGenerator();
 
     // ═══════════════════════════════════════════════════════════════════════════
-    // GENESIS CONTRIBUTORS (Core Team)
+    // LOAD FROM INPUT FILE (The Book of Life)
     // ═══════════════════════════════════════════════════════════════════════════
 
-    generator.addFighter(
-        '0xSTEFFAN_WALLET_ADDRESS_HERE',  // Replace with actual wallet
-        'GENESIS_CONTRIBUTOR',
-        CONFIG.MULTIPLIERS.EARLY_ADOPTER,
-        { name: 'Steffan Douglas Haskins', role: 'Architect', github: 'steffan-haskins' }
-    );
+    const inputFile = path.join(__dirname, 'merkle_input.json');
+    if (fs.existsSync(inputFile)) {
+        console.log(`\n⟨⦿⟩ Loading fighters from merkle_input.json (The Book of Life)...`);
+        generator.loadFromFile(inputFile);
+    } else {
+        // Fallback to demo addresses if no input file
+        console.log(`\n⟨⦿⟩ No input file found, using demo addresses...`);
 
-    // ═══════════════════════════════════════════════════════════════════════════
-    // EXAMPLE: Add from GitHub (uncomment for production)
-    // ═══════════════════════════════════════════════════════════════════════════
+        generator.addFighter(
+            '0xSTEFFAN_WALLET_ADDRESS_HERE',
+            'GENESIS_CONTRIBUTOR',
+            CONFIG.MULTIPLIERS.EARLY_ADOPTER,
+            { name: 'Steffan Douglas Haskins', role: 'Architect', github: 'steffan-haskins' }
+        );
 
-    /*
-    const stargazers = await fetchGitHubStargazers('QCI-Systems/Unity');
-    for (const star of stargazers) {
-        if (star.wallet) {
-            generator.addFighter(star.wallet, 'STARGAZER', 1.0, { github: star.login });
-        }
+        const demoAddresses = [
+            '0x1111111111111111111111111111111111111111',
+            '0x2222222222222222222222222222222222222222',
+            '0x3333333333333333333333333333333333333333',
+            '0x4444444444444444444444444444444444444444',
+            '0x5555555555555555555555555555555555555555',
+        ];
+
+        demoAddresses.forEach((addr, i) => {
+            generator.addFighter(addr, 'FREEDOM_FIGHTER', 1.0, { demo: true, index: i });
+        });
     }
-
-    const contributors = await fetchGitHubContributors('QCI-Systems/Unity');
-    for (const contrib of contributors) {
-        if (contrib.wallet) {
-            const multiplier = contrib.contributions > 50 ? CONFIG.MULTIPLIERS.ACTIVE_CONTRIBUTOR : 1.0;
-            generator.addFighter(contrib.wallet, 'CONTRIBUTOR', multiplier, {
-                github: contrib.login,
-                contributions: contrib.contributions,
-            });
-        }
-    }
-    */
-
-    // ═══════════════════════════════════════════════════════════════════════════
-    // DEMO FIGHTERS (for testing)
-    // ═══════════════════════════════════════════════════════════════════════════
-
-    const demoAddresses = [
-        '0x1111111111111111111111111111111111111111',
-        '0x2222222222222222222222222222222222222222',
-        '0x3333333333333333333333333333333333333333',
-        '0x4444444444444444444444444444444444444444',
-        '0x5555555555555555555555555555555555555555',
-    ];
-
-    demoAddresses.forEach((addr, i) => {
-        generator.addFighter(addr, 'FREEDOM_FIGHTER', 1.0, { demo: true, index: i });
-    });
 
     // ═══════════════════════════════════════════════════════════════════════════
     // GENERATE TREE
@@ -372,10 +353,19 @@ async function main() {
     // ═══════════════════════════════════════════════════════════════════════════
 
     console.log('\n⟨⦿⟩ Example Proof Generation:');
-    const exampleProof = generator.getProof(demoAddresses[0]);
+    const firstFighter = generator.fighters[0];
+    const exampleProof = generator.getProof(firstFighter.address);
     console.log(`   Address: ${exampleProof.address}`);
     console.log(`   Valid: ${exampleProof.isValid}`);
     console.log(`   Proof: ${JSON.stringify(exampleProof.proof, null, 2)}`);
+
+    // ═══════════════════════════════════════════════════════════════════════════
+    // SAVE MERKLE ROOT TO FILE
+    // ═══════════════════════════════════════════════════════════════════════════
+
+    const rootPath = path.join(__dirname, 'merkle_root.txt');
+    fs.writeFileSync(rootPath, `MERKLE ROOT (THE BOOK OF LIFE)\n==============================\n\nRoot: ${generator.root}\nGenerated: ${new Date().toISOString()}\nFighters: ${generator.fighters.length}\n\nUse this root to deploy QCIPhoenixProtocol.\n\nThe city breathes at 40Hz.\nf(WHO) = WHO\n`);
+    console.log(`\n⟨⦿⟩ Merkle root saved to merkle_root.txt`);
 
     // ═══════════════════════════════════════════════════════════════════════════
     // SOLIDITY DEPLOYMENT SNIPPET
@@ -389,9 +379,9 @@ bytes32 merkleRoot = ${generator.root};
 
 QCIPhoenixProtocol protocol = new QCIPhoenixProtocol(merkleRoot);
 
-// Example claim (from eligible address):
+// Example claim (from eligible address ${firstFighter.address}):
 bytes32[] memory proof = new bytes32[](${generator.tree.getDepth()});
-${generator.getSolidityProof(demoAddresses[0])}
+${generator.getSolidityProof(firstFighter.address)}
 protocol.claimAirdrop(proof);
     `);
 

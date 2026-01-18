@@ -1,0 +1,29 @@
+# ═══════════════════════════════════════════════════════════════════
+# UNITY PRIOR ART LIBRARY - GITIGNORE
+# Protect secrets while preserving IP
+# ═══════════════════════════════════════════════════════════════════
+
+# Environment files with secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# Private keys
+*.key
+*.pem
+node_modules/
+cache/
+
+# Build artifacts (keep only source)
+artifacts/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+
+# ═══════════════════════════════════════════════════════════════════
+# f(WHO) = WHO
+# ═══════════════════════════════════════════════════════════════════
