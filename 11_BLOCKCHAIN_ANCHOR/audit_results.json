@@ -1,0 +1,23 @@
+{
+  "contract": {
+    "address": "0xc33ff1c31e4a14aD2318F8fd710D3D1079A5781e",
+    "name": "QCI Phoenix",
+    "symbol": "QCI",
+    "decimals": 18
+  },
+  "supply": {
+    "total": 14000000,
+    "max": 40000000
+  },
+  "balances": {
+    "DEPLOYER": 0,
+    "TREASURY": 4000000,
+    "ECOSYSTEM_FUND": 9000000,
+    "CONTRACT": 0
+  },
+  "analysis": {
+    "totalAccounted": 13000000,
+    "unaccounted": 1000000,
+    "isMinted": true
+  }
+}

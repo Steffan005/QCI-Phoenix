@@ -18,6 +18,11 @@ cache/
 # Build artifacts (keep only source)
 artifacts/
 
+# Virtual environments
+.venv/
+venv/
+__pycache__/
+
 # Logs
 *.log
 

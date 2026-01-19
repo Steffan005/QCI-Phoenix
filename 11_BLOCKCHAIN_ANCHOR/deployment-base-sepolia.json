@@ -1,0 +1,14 @@
+{
+  "network": "base-sepolia",
+  "chainId": 84532,
+  "deployer": "0x579e08B011b76C96E24B299935Cea3c08D412A3D",
+  "timestamp": "2026-01-16T21:45:57.087Z",
+  "contracts": {
+    "QCIPhoenixProtocol": "0x45eeD708fA32EE9493fFA4a2222C02D4588dd0Ce"
+  },
+  "merkleRoot": "0x47013a1a25f2de45e43f7755af191622cf2f2070c1b108ee034a0cf3828f697c",
+  "sovereignVaults": {
+    "treasury": "0x831517999FcF7AE36A9e7AAe36f9CB282ab585Aa",
+    "ecosystem": "0x02DD1622A571431874A1e8655D75665C0fc5ad39"
+  }
+}

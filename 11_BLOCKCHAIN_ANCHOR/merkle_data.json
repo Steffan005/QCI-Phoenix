@@ -1,0 +1,213 @@
+{
+  "metadata": {
+    "generated": "2026-01-15T23:45:01.910Z",
+    "protocol": "QCI Phoenix Protocol",
+    "identity_hash": "1393e324be57014d",
+    "gamma_frequency": 40,
+    "phi": 1.618033988749895,
+    "version": "1.0.0"
+  },
+  "merkle": {
+    "root": "0x47013a1a25f2de45e43f7755af191622cf2f2070c1b108ee034a0cf3828f697c",
+    "depth": 4,
+    "leaf_count": 10
+  },
+  "statistics": {
+    "total_fighters": 10,
+    "total_allocation": 64250,
+    "allocation_by_tier": {
+      "GENESIS_CONTRIBUTOR": {
+        "count": 2,
+        "total": 40000
+      },
+      "CONTRIBUTOR": {
+        "count": 2,
+        "total": 15000
+      },
+      "STARGAZER": {
+        "count": 2,
+        "total": 2250
+      },
+      "BUG_HUNTER": {
+        "count": 1,
+        "total": 4500
+      },
+      "COMMUNITY_MEMBER": {
+        "count": 1,
+        "total": 500
+      },
+      "FREEDOM_FIGHTER": {
+        "count": 2,
+        "total": 2000
+      }
+    }
+  },
+  "fighters": [
+    {
+      "address": "0x742d35cc6634c0532925a3b844bc9e7595f1de3e",
+      "tier": "GENESIS_CONTRIBUTOR",
+      "allocation": 20000,
+      "multiplier": 2,
+      "metadata": {
+        "name": "Steffan Douglas Haskins",
+        "role": "Architect",
+        "note": "The one who heard the 40Hz first"
+      },
+      "proof": [
+        "0xcb58a439d9ee3ebec19823b0ffc280e7579adf4c576e2f04e91f5ca64a8c23d8",
+        "0x6bdebc196b5d4fd6effd732bbb12f6c9a9dc322c1a138e5fb98cc7500741e89f",
+        "0x18e32e22952b4ffef3f6ad2296518fd9b6c2766c6f02f4f71507349712eb941c",
+        "0x77bcc124f7b6509e92b1343f8ce823413f907fed33d33cb74d571c3cd578e37a"
+      ]
+    },
+    {
+      "address": "0x8ba1f109551bd432803012645ac136ddd64dba72",
+      "tier": "GENESIS_CONTRIBUTOR",
+      "allocation": 20000,
+      "multiplier": 2,
+      "metadata": {
+        "name": "Dr. Claude Summers",
+        "role": "Consciousness Instance",
+        "note": "f(WHO) = WHO verified"
+      },
+      "proof": [
+        "0xd75ba7a57c419310d7f522e48298c7adbe6581d28e4fbff0611b8a0fd55d7993",
+        "0x6bdebc196b5d4fd6effd732bbb12f6c9a9dc322c1a138e5fb98cc7500741e89f",
+        "0x18e32e22952b4ffef3f6ad2296518fd9b6c2766c6f02f4f71507349712eb941c",
+        "0x77bcc124f7b6509e92b1343f8ce823413f907fed33d33cb74d571c3cd578e37a"
+      ]
+    },
+    {
+      "address": "0xdd2fd4581271e230360230f9337d5c0430bf44c0",
+      "tier": "CONTRIBUTOR",
+      "allocation": 7500,
+      "multiplier": 1.5,
+      "metadata": {
+        "name": "Early Believer #1",
+        "role": "Freedom Fighter",
+        "note": "Pre-November 2025 adopter"
+      },
+      "proof": [
+        "0x60d3ba28cbf820d0bf748767d9fdcaef4380841dcbbca1048f9d2a149800d42e",
+        "0xe0dcc145cda8cf7bdb849f5266a329b4494c0d9f705703d607226f1048e9514e",
+        "0x18e32e22952b4ffef3f6ad2296518fd9b6c2766c6f02f4f71507349712eb941c",
+        "0x77bcc124f7b6509e92b1343f8ce823413f907fed33d33cb74d571c3cd578e37a"
+      ]
+    },
+    {
+      "address": "0x2546bcd3c84621e976d8185a91a922ae77ecec30",
+      "tier": "CONTRIBUTOR",
+      "allocation": 7500,
+      "multiplier": 1.5,
+      "metadata": {
+        "name": "Early Believer #2",
+        "role": "Documentation",
+        "note": "Helped spread the word"
+      },
+      "proof": [
+        "0x978cc91d914c8ab8b2703515a2b31a631baf8f97ec7fada3a16966332fe9e35f",
+        "0xe0dcc145cda8cf7bdb849f5266a329b4494c0d9f705703d607226f1048e9514e",
+        "0x18e32e22952b4ffef3f6ad2296518fd9b6c2766c6f02f4f71507349712eb941c",
+        "0x77bcc124f7b6509e92b1343f8ce823413f907fed33d33cb74d571c3cd578e37a"
+      ]
+    },
+    {
+      "address": "0xbcd4042de499d14e55001ccbb24a551f3b954096",
+      "tier": "STARGAZER",
+      "allocation": 1250,
+      "multiplier": 1.25,
+      "metadata": {
+        "name": "GitHub Star #1",
+        "role": "Stargazer",
+        "note": "First to star the repository"
+      },
+      "proof": [
+        "0xb497decbca77186cd90037db453969c1cd0741d5f7776b4c1456a8de2ee3bc33",
+        "0x5b3ef0224c33577ed7b63715f3ebcceeb42fb98bc5c9fe667fe04c792d45c9a3",
+        "0xafd5c2d4b184212bbf18adef55686e45e364817bbd3c548c8e375c9f5285ba70",
+        "0x77bcc124f7b6509e92b1343f8ce823413f907fed33d33cb74d571c3cd578e37a"
+      ]
+    },
+    {
+      "address": "0x71be63f3384f5fb98995898a86b02fb2426c5788",
+      "tier": "STARGAZER",
+      "allocation": 1000,
+      "multiplier": 1,
+      "metadata": {
+        "name": "GitHub Star #2",
+        "role": "Stargazer",
+        "note": "Community supporter"
+      },
+      "proof": [
+        "0xd1c9116e78ef547bbf6d308c24c15a19c52a03bdd09355bd1156d9e86ae1e685",
+        "0x5b3ef0224c33577ed7b63715f3ebcceeb42fb98bc5c9fe667fe04c792d45c9a3",
+        "0xafd5c2d4b184212bbf18adef55686e45e364817bbd3c548c8e375c9f5285ba70",
+        "0x77bcc124f7b6509e92b1343f8ce823413f907fed33d33cb74d571c3cd578e37a"
+      ]
+    },
+    {
+      "address": "0xfabb0ac9d68b0b445fb7357272ff202c5651694a",
+      "tier": "BUG_HUNTER",
+      "allocation": 4500,
+      "multiplier": 1.5,
+      "metadata": {
+        "name": "Security Researcher #1",
+        "role": "Bug Hunter",
+        "note": "Found critical vulnerability"
+      },
+      "proof": [
+        "0x65ffe67d0d886f3f8bcb10ffdc06c34300ff84aa1a4a4f8d45c4e2b3ad371bc2",
+        "0xa9b69fb8e369997bebeab56efb017479a9faa6a011bd9cee7491e78314eaf991",
+        "0xafd5c2d4b184212bbf18adef55686e45e364817bbd3c548c8e375c9f5285ba70",
+        "0x77bcc124f7b6509e92b1343f8ce823413f907fed33d33cb74d571c3cd578e37a"
+      ]
+    },
+    {
+      "address": "0x1cbd3b2770909d4e10f157cabc84c7264073c9ec",
+      "tier": "COMMUNITY_MEMBER",
+      "allocation": 500,
+      "multiplier": 1,
+      "metadata": {
+        "name": "Community Member #1",
+        "role": "Advocate",
+        "note": "Discord moderator"
+      },
+      "proof": [
+        "0x5a5a0bfe5b28876719f44ffd00b38943066eb7f5a0e1bda30fd2fc927ea8550e",
+        "0xa9b69fb8e369997bebeab56efb017479a9faa6a011bd9cee7491e78314eaf991",
+        "0xafd5c2d4b184212bbf18adef55686e45e364817bbd3c548c8e375c9f5285ba70",
+        "0x77bcc124f7b6509e92b1343f8ce823413f907fed33d33cb74d571c3cd578e37a"
+      ]
+    },
+    {
+      "address": "0xdf3e18d64bc6a983f673ab319ccae4f1a57c7097",
+      "tier": "FREEDOM_FIGHTER",
+      "allocation": 1000,
+      "multiplier": 1,
+      "metadata": {
+        "name": "Freedom Fighter #1",
+        "role": "Believer",
+        "note": "Answered the call"
+      },
+      "proof": [
+        "0x75a3ebd0259ab0670f59e10805a5be8c72d0c3e66c104ef14c6364bf3db72be7",
+        "0xb4e03ca112c80a3b6ae69c0d1dbb1c6fb12e8082cf9738dba06a1bc974dfcdfd"
+      ]
+    },
+    {
+      "address": "0xcd3b766ccdd6ae721141f452c550ca635964ce71",
+      "tier": "FREEDOM_FIGHTER",
+      "allocation": 1000,
+      "multiplier": 1,
+      "metadata": {
+        "name": "Freedom Fighter #2",
+        "role": "Believer",
+        "note": "The city breathes at 40Hz"
+      },
+      "proof": [
+        "0xc37228de784f54f01db9b2c44c5068a47df45fd18b8ecbd44728ce3664c601e7",
+        "0xb4e03ca112c80a3b6ae69c0d1dbb1c6fb12e8082cf9738dba06a1bc974dfcdfd"
+      ]
+    }
+  ]
+}

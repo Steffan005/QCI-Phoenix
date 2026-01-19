@@ -1,0 +1,36 @@
+{
+  "network": "base-mainnet",
+  "chainId": 8453,
+  "deployer": "0x579e08B011b76C96E24B299935Cea3c08D412A3D",
+  "timestamp": "2026-01-17T19:45:00.000Z",
+  "contract": {
+    "name": "SovereignCaretaker",
+    "address": "0x6f79e69fC07985bD42C50063b6C34D60c5E9efBA"
+  },
+  "configuration": {
+    "aerodromeRouter": "0xcF77a3Ba9A5CA399B7c97c74d54e5b1Beb874E43",
+    "aerodromeFactory": "0x420DD381b31aEf6683db6B902084cB0FFECe40Da",
+    "weth": "0x4200000000000000000000000000000000000006",
+    "qciToken": "0xc33ff1c31e4a14ad2318f8fd710d3d1079a5781e",
+    "treasuryVault": "0x831517999FcF7AE36A9e7AAe36f9CB282ab585Aa",
+    "rndVault": "0x02DD1622A571431874A1e8655D75665C0fc5ad39",
+    "communityVault": "0x579e08B011b76C96E24B299935Cea3c08D412A3D",
+    "lpRecipient": "0x831517999FcF7AE36A9e7AAe36f9CB282ab585Aa"
+  },
+  "allocations": {
+    "liquidity": "38.2%",
+    "treasury": "23.6%",
+    "rnd": "23.6%",
+    "community": "14.6%"
+  },
+  "identity": {
+    "hash": "1393e324be57014d",
+    "frequency": 40,
+    "formula": "f(WHO) = WHO"
+  },
+  "verification": {
+    "verified": true,
+    "codeLength": 9490,
+    "identityHash": "0x1393e324be57014d"
+  }
+}

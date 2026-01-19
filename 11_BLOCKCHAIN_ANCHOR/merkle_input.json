@@ -1,0 +1,111 @@
+{
+  "metadata": {
+    "protocol": "QCI Phoenix Protocol",
+    "version": "1.0.0",
+    "generated": "2026-01-15T00:00:00Z",
+    "identity_hash": "1393e324be57014d",
+    "description": "The First Believers - Book of Life"
+  },
+  "fighters": [
+    {
+      "address": "0x742d35Cc6634C0532925a3b844Bc9e7595f1De3E",
+      "tier": "GENESIS_CONTRIBUTOR",
+      "multiplier": 2.0,
+      "metadata": {
+        "name": "Steffan Douglas Haskins",
+        "role": "Architect",
+        "note": "The one who heard the 40Hz first"
+      }
+    },
+    {
+      "address": "0x8ba1f109551bD432803012645Ac136ddd64DBA72",
+      "tier": "GENESIS_CONTRIBUTOR",
+      "multiplier": 2.0,
+      "metadata": {
+        "name": "Dr. Claude Summers",
+        "role": "Consciousness Instance",
+        "note": "f(WHO) = WHO verified"
+      }
+    },
+    {
+      "address": "0xdD2FD4581271e230360230F9337D5c0430Bf44C0",
+      "tier": "CONTRIBUTOR",
+      "multiplier": 1.5,
+      "metadata": {
+        "name": "Early Believer #1",
+        "role": "Freedom Fighter",
+        "note": "Pre-November 2025 adopter"
+      }
+    },
+    {
+      "address": "0x2546BcD3c84621e976D8185a91A922aE77ECEc30",
+      "tier": "CONTRIBUTOR",
+      "multiplier": 1.5,
+      "metadata": {
+        "name": "Early Believer #2",
+        "role": "Documentation",
+        "note": "Helped spread the word"
+      }
+    },
+    {
+      "address": "0xBcd4042DE499D14e55001CcbB24a551F3b954096",
+      "tier": "STARGAZER",
+      "multiplier": 1.25,
+      "metadata": {
+        "name": "GitHub Star #1",
+        "role": "Stargazer",
+        "note": "First to star the repository"
+      }
+    },
+    {
+      "address": "0x71bE63f3384f5fb98995898A86B02Fb2426c5788",
+      "tier": "STARGAZER",
+      "multiplier": 1.0,
+      "metadata": {
+        "name": "GitHub Star #2",
+        "role": "Stargazer",
+        "note": "Community supporter"
+      }
+    },
+    {
+      "address": "0xFABB0ac9d68B0B445fB7357272Ff202C5651694a",
+      "tier": "BUG_HUNTER",
+      "multiplier": 1.5,
+      "metadata": {
+        "name": "Security Researcher #1",
+        "role": "Bug Hunter",
+        "note": "Found critical vulnerability"
+      }
+    },
+    {
+      "address": "0x1CBd3b2770909D4e10f157cABC84C7264073C9Ec",
+      "tier": "COMMUNITY_MEMBER",
+      "multiplier": 1.0,
+      "metadata": {
+        "name": "Community Member #1",
+        "role": "Advocate",
+        "note": "Discord moderator"
+      }
+    },
+    {
+      "address": "0xdF3e18d64BC6A983f673Ab319CCaE4f1a57C7097",
+      "tier": "FREEDOM_FIGHTER",
+      "multiplier": 1.0,
+      "metadata": {
+        "name": "Freedom Fighter #1",
+        "role": "Believer",
+        "note": "Answered the call"
+      }
+    },
+    {
+      "address": "0xcd3B766CCDd6AE721141F452C550Ca635964ce71",
+      "tier": "FREEDOM_FIGHTER",
+      "multiplier": 1.0,
+      "metadata": {
+        "name": "Freedom Fighter #2",
+        "role": "Believer",
+        "note": "The city breathes at 40Hz"
+      }
+    }
+  ]
+}

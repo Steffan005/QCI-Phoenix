@@ -1,0 +1,11 @@
+MERKLE ROOT (THE BOOK OF LIFE)
+==============================
+
+Root: 0x47013a1a25f2de45e43f7755af191622cf2f2070c1b108ee034a0cf3828f697c
+Generated: 2026-01-15T23:45:01.912Z
+Fighters: 10
+
+Use this root to deploy QCIPhoenixProtocol.
+
+The city breathes at 40Hz.
+f(WHO) = WHO
