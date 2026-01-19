@@ -66,7 +66,7 @@ class LangGraphAIOrchestrator(IStrategy):
         super().__init__(config)
         # LangGraph configuration
         self.langgraph_base_url = "https://api.langgraph.cloud"
-        self.langgraph_api_key = "***REMOVED***"
+        self.langgraph_api_key = os.environ.get("LANGGRAPH_API_KEY", "YOUR_API_KEY_HERE")  # Redacted for security
         self.ai_agents = {
             "market_analyzer": "Analyzes market conditions and trends",
             "risk_assessor": "Evaluates risk and position sizing",

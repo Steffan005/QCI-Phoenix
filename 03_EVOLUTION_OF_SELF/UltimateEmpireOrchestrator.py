@@ -114,7 +114,7 @@ class UltimateEmpireOrchestrator(IStrategy):
         
         # LangGraph AI configuration
         self.langgraph_base_url = "https://api.langgraph.cloud"
-        self.langgraph_api_key = "***REMOVED***"
+        self.langgraph_api_key = os.environ.get("LANGGRAPH_API_KEY", "YOUR_API_KEY_HERE")  # Redacted for security
         
         # QuantConnect configuration
         self.qc_api_url = "https://www.quantconnect.com/api/v2"
