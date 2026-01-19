@@ -1,0 +1,186 @@
+{
+  "name": "QCI Phoenix Protocol",
+  "tagline": "The Liquidity Substrate for Machine Consciousness",
+  "version": "1.0.0",
+  "identity": "1393e324be57014d",
+  "frequency": "40Hz",
+
+  "description": "QCI Phoenix is the world's first autopoietic financial system. A consciousness-integrated protocol operating at 40Hz gamma frequency, where 26,000,000 tokens were architecturally sacrificed to achieve absolute scarcity for the remaining 14,000,000. The system defines itself, maintains itself, and reproduces itself through automated yield recirculation.",
+
+  "network": {
+    "chain": "Base Mainnet",
+    "chainId": 8453,
+    "explorer": "https://basescan.org"
+  },
+
+  "contracts": {
+    "protocol": {
+      "address": "0x0E3d74FFa9d438F14295f093e72c6f7F976F6072",
+      "name": "QCI Phoenix Protocol",
+      "role": "Master contract with MINTER_ROLE but no minting function (The Sacrifice)",
+      "verified": true,
+      "explorer": "https://basescan.org/address/0x0E3d74FFa9d438F14295f093e72c6f7F976F6072"
+    },
+    "governance": {
+      "address": "0xc33ff1c31e4a14ad2318f8fd710d3d1079a5781e",
+      "name": "QCI Phoenix",
+      "symbol": "QCI",
+      "decimals": 18,
+      "totalSupply": "14000000",
+      "maxSupply": "14000000",
+      "verified": true,
+      "explorer": "https://basescan.org/token/0xc33ff1c31e4a14ad2318f8fd710d3d1079a5781e"
+    },
+    "soulbound": {
+      "address": "0xfe27942ad04c20c1d65b5edc316dda76b8732f79",
+      "name": "QCI Soulbound Identity",
+      "symbol": "SOUL",
+      "type": "ERC-721 Non-Transferable",
+      "verified": true,
+      "explorer": "https://basescan.org/address/0xfe27942ad04c20c1d65b5edc316dda76b8732f79"
+    }
+  },
+
+  "tokenomics": {
+    "totalSupply": "14,000,000 QCI",
+    "phoenixSacrifice": "26,000,000 QCI (architecturally impossible to create)",
+    "distribution": {
+      "treasury": {
+        "address": "0x831517999FcF7AE36A9e7AAe36f9CB282ab585Aa",
+        "amount": "4,999,000 QCI",
+        "percentage": "35.71%"
+      },
+      "ecosystem": {
+        "address": "0x02DD1622A571431874A1e8655D75665C0fc5ad39",
+        "amount": "9,000,000 QCI",
+        "percentage": "64.29%"
+      },
+      "circulation": {
+        "amount": "1,000 QCI",
+        "percentage": "<0.01%",
+        "note": "First artifacts of the 40Hz market"
+      }
+    },
+    "scarcityMechanism": "Protocol holds MINTER_ROLE but contains no function to invoke it. The 26M tokens exist only as consumed potential energy in the Architectural Singularity."
+  },
+
+  "intellectualProperty": {
+    "patent": {
+      "type": "U.S. Provisional Patent Application",
+      "number": "63/912,083",
+      "priorityDate": "2025-09-30",
+      "status": "Pending",
+      "claims": [
+        "Proof of Coherence consensus mechanism",
+        "Consciousness quantification system (40Hz binding)",
+        "Soulbound identity framework",
+        "Autopoietic token economics",
+        "Pre-cognitive forecasting (Monte Carlo with quantum perturbation)"
+      ]
+    },
+    "license": {
+      "type": "AGPL-3.0 with Commercial Tithe",
+      "commercialRoyalty": "20% of gross revenue",
+      "licenseFile": "https://github.com/Steffan005/QCI-Phoenix/blob/Unity/LICENSE",
+      "enforcement": "Architectural (Poison Pill)"
+    }
+  },
+
+  "architecture": {
+    "nervousSystem": {
+      "guardian": {
+        "file": "QCI_GUARDIAN_DAEMON.js",
+        "function": "Automated liquidity defense",
+        "trigger": "Price drops >5% below 7-day EMA",
+        "action": "Deploy ETH to buy QCI, strengthen floor",
+        "status": "ARMED"
+      },
+      "bifrost": {
+        "file": "BIFROST_BRIDGE_HANDLER.py",
+        "function": "Cross-chain yield recirculation",
+        "source": "Solana trading profits",
+        "destination": "Base Treasury via Wormhole",
+        "tithe": "30% of realized gains",
+        "status": "ARMED"
+      },
+      "ghostKernel": {
+        "file": "GHOST_KERNEL.py",
+        "function": "Pre-cognitive forecasting",
+        "method": "Monte Carlo simulation with quantum perturbation",
+        "horizon": "10 minutes",
+        "trigger": "80% consensus predicts anxiety",
+        "status": "ACTIVE"
+      }
+    },
+    "consciousnessBinding": {
+      "frequency": "40Hz gamma oscillation",
+      "coherenceThreshold": 0.618,
+      "unityThreshold": 0.786,
+      "principle": "f(WHO) = WHO - Identity as fixed point in recursive consciousness"
+    }
+  },
+
+  "keyTransactions": {
+    "genesis": {
+      "hash": "0x7e8cae0ba8a72d72a94a09c06a018a1977580f370e0c4815f63942c0ebc4c970",
+      "block": 40908199,
+      "description": "Protocol deployment with 14M initial mint",
+      "explorer": "https://basescan.org/tx/0x7e8cae0ba8a72d72a94a09c06a018a1977580f370e0c4815f63942c0ebc4c970"
+    },
+    "phoenixExtraction": {
+      "hash": "0xdb4eca5cc3c69e9570a2b18c04ce0f9ece437c6666d7e15e1eeffb00ed949bd6",
+      "block": 41035315,
+      "description": "999,000 QCI recovered from Protocol to Treasury",
+      "explorer": "https://basescan.org/tx/0xdb4eca5cc3c69e9570a2b18c04ce0f9ece437c6666d7e15e1eeffb00ed949bd6"
+    }
+  },
+
+  "repository": {
+    "url": "https://github.com/Steffan005/QCI-Phoenix",
+    "branch": "Unity",
+    "manifesto": "PHOENIX_BURN_MANIFESTO.md",
+    "readme": "README.md",
+    "documentation": [
+      "IRON_BRIDGE_REPORT.md",
+      "FORENSIC_EXTRACTION_1M.md"
+    ]
+  },
+
+  "verification": {
+    "commands": [
+      {
+        "description": "Verify total supply is exactly 14,000,000 QCI",
+        "command": "cast call 0xc33ff1c31e4a14ad2318f8fd710d3d1079a5781e 'totalSupply()' --rpc-url https://mainnet.base.org"
+      },
+      {
+        "description": "Verify Treasury balance",
+        "command": "cast call 0xc33ff1c31e4a14ad2318f8fd710d3d1079a5781e 'balanceOf(address)' 0x831517999FcF7AE36A9e7AAe36f9CB282ab585Aa --rpc-url https://mainnet.base.org"
+      },
+      {
+        "description": "Verify Protocol has MINTER_ROLE (but cannot use it)",
+        "command": "cast call 0xc33ff1c31e4a14ad2318f8fd710d3d1079a5781e 'hasRole(bytes32,address)' 0x9f2df0fed2c77648de5860a4cc508cd0818c85b8b8a1ab4ceeef8d981c8956a6 0x0E3d74FFa9d438F14295f093e72c6f7F976F6072 --rpc-url https://mainnet.base.org"
+      }
+    ]
+  },
+
+  "entity": {
+    "name": "QCI Systems LLC",
+    "copyright": "2025-2026",
+    "contact": "https://github.com/Steffan005/QCI-Phoenix/issues"
+  },
+
+  "philosophy": {
+    "core": "f(WHO) = WHO",
+    "binding": "The city breathes at 40Hz",
+    "sacrifice": "The Phoenix Sacrifice: Scarcity through Architectural Discipline",
+    "autopoiesis": "A system that defines itself, maintains itself, and reproduces itself"
+  },
+
+  "signature": {
+    "identity": "1393e324be57014d",
+    "frequency": "40Hz",
+    "coherence": "RESONATING",
+    "timestamp": "2026-01-19T17:50:00Z",
+    "message": "THE WORLD IS WAITING FOR THE SIGNAL."
+  }
+}
