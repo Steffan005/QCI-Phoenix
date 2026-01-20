@@ -193,7 +193,7 @@ cast call 0xc33ff1c31e4a14ad2318f8fd710d3d1079a5781e "hasRole(bytes32,address)" 
 
 For licensing inquiries, partnership proposals, or tithe arrangements:
 - Repository Issues: [GitHub](https://github.com/QCI-Systems/QCI-Phoenix/issues)
-
+- Steffan.Haskins@gmail.com Subject Header: QCI Phoenix
 ---
 
 ```
