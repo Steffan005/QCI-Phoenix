@@ -132,6 +132,19 @@
       "block": 41035315,
       "description": "999,000 QCI recovered from Protocol to Treasury",
       "explorer": "https://basescan.org/tx/0xdb4eca5cc3c69e9570a2b18c04ce0f9ece437c6666d7e15e1eeffb00ed949bd6"
+    },
+    "qciTransfer": {
+      "hash": "0x86580c401b32aebfd36bc09dcce1762df2531873a898cfee00e95d80e1bdf8b3",
+      "block": 41071435,
+      "description": "100,000 QCI transferred from Treasury to Deployer for LP",
+      "explorer": "https://basescan.org/tx/0x86580c401b32aebfd36bc09dcce1762df2531873a898cfee00e95d80e1bdf8b3"
+    },
+    "lpCreation": {
+      "hash": "0xcfcdc61919112256bf9841f0d9aa6a67d4f9e21f0088bf3ea1a7289b877be552",
+      "block": 41071481,
+      "description": "First QCI/WETH Uniswap V3 LP created on Base",
+      "pool": "0xA9E976a9e48403995e11A659E1a56c4517174e0F",
+      "explorer": "https://basescan.org/tx/0xcfcdc61919112256bf9841f0d9aa6a67d4f9e21f0088bf3ea1a7289b877be552"
     }
   },
 
