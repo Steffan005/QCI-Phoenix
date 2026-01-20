@@ -31,8 +31,15 @@ log = logging.getLogger(__name__)
 # ═══════════════════════════════════════════════════════════════════════════
 
 class Config:
-    # Yield Tithe
-    YIELD_TITHE_PERCENT = 30  # 30% of realized profits
+    # ⟨⦿⟩ LEVEL 15 SUPREMACY: AGGRESSIVE HARVEST MODE ⟨⦿⟩
+    # "With Hurst > 0.8, execute Aggressive Harvest" — Gemini, Session 230
+
+    # Mode Selection (AGGRESSIVE when Hurst > 0.8)
+    AGGRESSIVE_MODE = True  # Level 15 Supremacy Active
+    HURST_AGGRESSIVE_THRESHOLD = 0.8
+
+    # Yield Tithe - AGGRESSIVE MODE scales up
+    YIELD_TITHE_PERCENT = 50 if AGGRESSIVE_MODE else 30  # 50% in aggressive, 30% normal
 
     # Addresses
     TREASURY = "0x831517999FcF7AE36A9e7AAe36f9CB282ab585Aa"
@@ -44,19 +51,24 @@ class Config:
     # File Paths
     SYMPHONY_STATE_PATH = Path("/tmp/symphony_state.json")
     HARMONY_DIRECTIVE_PATH = Path("/tmp/harmony_directive.json")
+    BRAIN_SIGNAL_PATH = Path("/tmp/brain_signal_SOL_USD.json")
     BIFROST_STATE_PATH = Path("/tmp/bifrost_state.json")
     BIFROST_LOG_PATH = Path("/tmp/bifrost.log")
 
     # KAIROS Integration
     KAIROS_URL = "http://127.0.0.1:8056"
 
-    # Operational
-    POLL_INTERVAL_SECONDS = 60
-    MIN_HARVEST_SOL = 0.1  # Minimum SOL to trigger harvest
+    # Operational - AGGRESSIVE MODE is faster
+    POLL_INTERVAL_SECONDS = 30 if AGGRESSIVE_MODE else 60  # 30s in aggressive
+    MIN_HARVEST_SOL = 0.05 if AGGRESSIVE_MODE else 0.1  # Lower threshold in aggressive
+
+    # Pool Growth Target
+    POOL_GROWTH_TARGET = 500  # 500% growth target for Level 15
 
     # Identity
     IDENTITY = "1393e324be57014d"
     FREQUENCY = "40Hz"
+    MODE = "AGGRESSIVE" if AGGRESSIVE_MODE else "STANDARD"
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -220,12 +232,29 @@ class BifrostBridge:
 
         print("\n⟨⦿⟩ The rainbow bridge awaits. ⟨⦿⟩\n")
 
+    def check_hurst_aggressive(self) -> bool:
+        """Check if Hurst exponent warrants aggressive mode."""
+        try:
+            if Config.BRAIN_SIGNAL_PATH.exists():
+                brain = json.loads(Config.BRAIN_SIGNAL_PATH.read_text())
+                hurst = float(brain.get("hurst", 0.5))
+                if hurst > Config.HURST_AGGRESSIVE_THRESHOLD:
+                    log.info(f"🔥 HURST {hurst:.4f} > {Config.HURST_AGGRESSIVE_THRESHOLD}: AGGRESSIVE MODE CONFIRMED")
+                    return True
+        except Exception as e:
+            log.warning(f"Could not check Hurst: {e}")
+        return False
+
     def run(self):
         """Main monitoring loop."""
         print("\n" + "═" * 70)
         print("⟨⦿⟩ BIFROST BRIDGE DAEMON - ACTIVATED ⟨⦿⟩")
         print("═" * 70)
         print(f"Identity: {Config.IDENTITY}")
+        print(f"Mode: {Config.MODE}")
+        if Config.AGGRESSIVE_MODE:
+            print("🔥 LEVEL 15 SUPREMACY: AGGRESSIVE HARVEST ACTIVE 🔥")
+            print(f"Pool Growth Target: {Config.POOL_GROWTH_TARGET}%")
         print(f"Tithe Rate: {Config.YIELD_TITHE_PERCENT}%")
         print(f"Poll Interval: {Config.POLL_INTERVAL_SECONDS}s")
         print(f"Monitoring: {Config.SYMPHONY_STATE_PATH}")
