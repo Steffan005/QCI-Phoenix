@@ -17,6 +17,12 @@ const path = require('path');
 // CONFIGURATION
 // ═══════════════════════════════════════════════════════════════════════════
 
+// ⟨⦿⟩ SOVEREIGN MODE ACTIVE ⟨⦿⟩
+// "Protecting the 7-day EMA floor with absolute mechanical prejudice"
+// — Gemini, Session 230
+
+const SOVEREIGN_MODE = true;
+
 const CONFIG = {
     // Network
     RPC_URL: "https://mainnet.base.org",
@@ -34,20 +40,22 @@ const CONFIG = {
     UNISWAP_V3_QUOTER: "0x3d4e44Eb1374240CE5F1B871ab261CD16335B76a",
     FEE_TIER: 3000, // 0.3%
 
-    // Guardian Parameters
+    // Guardian Parameters - SOVEREIGN MODE overrides
     EMA_PERIOD_DAYS: 7,
-    FLOOR_DEFENSE_THRESHOLD: 0.05,  // 5% below EMA triggers defense
-    MIN_DEFENSE_ETH: 0.01,          // Minimum ETH to deploy in defense
-    MAX_DEFENSE_ETH: 0.5,           // Maximum ETH per defense action
+    FLOOR_DEFENSE_THRESHOLD: SOVEREIGN_MODE ? 0.03 : 0.05,  // 3% in sovereign, 5% normal
+    MIN_DEFENSE_ETH: 0.01,
+    MAX_DEFENSE_ETH: SOVEREIGN_MODE ? 1.0 : 0.5,            // Double max in sovereign mode
+    DEFENSE_PERCENTAGE: SOVEREIGN_MODE ? 0.70 : 0.50,       // 70% of balance in sovereign mode
 
-    // Operational
-    POLLING_INTERVAL_MS: 60000,     // Check every 60 seconds
+    // Operational - SOVEREIGN MODE is more aggressive
+    POLLING_INTERVAL_MS: SOVEREIGN_MODE ? 30000 : 60000,    // 30s in sovereign, 60s normal
     PRICE_HISTORY_FILE: "/tmp/qci_price_history.json",
     GUARDIAN_LOG_FILE: "/tmp/guardian.log",
 
     // Identity
     IDENTITY: "1393e324be57014d",
-    FREQUENCY: "40Hz"
+    FREQUENCY: "40Hz",
+    MODE: SOVEREIGN_MODE ? "SOVEREIGN" : "STANDARD"
 };
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -242,11 +250,14 @@ class QCIGuardian {
                 return;
             }
 
-            // Calculate defense amount (use 50% of available, up to max)
-            let defenseAmount = Math.min(ethBalanceNum * 0.5, CONFIG.MAX_DEFENSE_ETH);
+            // Calculate defense amount (SOVEREIGN MODE uses higher percentage)
+            let defenseAmount = Math.min(ethBalanceNum * CONFIG.DEFENSE_PERCENTAGE, CONFIG.MAX_DEFENSE_ETH);
             defenseAmount = Math.max(defenseAmount, CONFIG.MIN_DEFENSE_ETH);
 
-            this.log(`🛡️ EXECUTING FLOOR DEFENSE: ${defenseAmount.toFixed(4)} ETH`);
+            this.log(`🛡️ EXECUTING FLOOR DEFENSE [${CONFIG.MODE} MODE]: ${defenseAmount.toFixed(4)} ETH`);
+            if (SOVEREIGN_MODE) {
+                this.log(`⚔️ ABSOLUTE MECHANICAL PREJUDICE ENGAGED ⚔️`);
+            }
 
             // Execute swap via Uniswap V3 Router
             const router = new ethers.Contract(CONFIG.UNISWAP_V3_ROUTER, UNISWAP_V3_ROUTER_ABI, this.wallet);
@@ -340,7 +351,13 @@ class QCIGuardian {
         console.log("═".repeat(70));
         console.log(`Identity: ${CONFIG.IDENTITY}`);
         console.log(`Frequency: ${CONFIG.FREQUENCY}`);
+        console.log(`Mode: ${CONFIG.MODE}`);
+        if (SOVEREIGN_MODE) {
+            console.log("⚔️  SOVEREIGN MODE: ABSOLUTE MECHANICAL PREJUDICE ⚔️");
+        }
         console.log(`Defense Threshold: ${CONFIG.FLOOR_DEFENSE_THRESHOLD * 100}% below EMA`);
+        console.log(`Defense Percentage: ${CONFIG.DEFENSE_PERCENTAGE * 100}% of available ETH`);
+        console.log(`Max Defense: ${CONFIG.MAX_DEFENSE_ETH} ETH`);
         console.log(`Polling Interval: ${CONFIG.POLLING_INTERVAL_MS / 1000}s`);
         console.log("═".repeat(70) + "\n");
 
