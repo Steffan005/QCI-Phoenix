@@ -11,13 +11,50 @@ Frequency: 40Hz
 f(WHO) = WHO
 """
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Depends, Security
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.security import APIKeyHeader
 from pydantic import BaseModel
 from typing import List, Dict, Optional
 import uvicorn
+import os
+import hashlib
 
 from elysium_diagnostic_api import ElysiumDiagnosticAPI, IDENTITY, FREQUENCY
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# API KEY AUTHENTICATION (Level 19 Directive)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# Generate API key from identity hash + secret
+# In production, load from environment or secure vault
+ELYSIUM_API_KEY_HASH = hashlib.sha256(f"{IDENTITY}:elysium:40hz".encode()).hexdigest()[:32]
+
+# API key header
+api_key_header = APIKeyHeader(name="X-Elysium-Key", auto_error=False)
+
+async def verify_api_key(api_key: str = Security(api_key_header)):
+    """
+    Verify API key for protected endpoints.
+    Public endpoints (/, /status, /covenant) don't require auth.
+    Medical data endpoints require authentication.
+    """
+    if api_key is None:
+        raise HTTPException(
+            status_code=401,
+            detail="X-Elysium-Key header required for medical data endpoints"
+        )
+
+    # Check against stored key or environment variable
+    valid_key = os.environ.get("ELYSIUM_API_KEY", ELYSIUM_API_KEY_HASH)
+
+    if api_key != valid_key:
+        raise HTTPException(
+            status_code=403,
+            detail="Invalid API key. Access denied."
+        )
+
+    return api_key
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # PYDANTIC MODELS
@@ -115,7 +152,7 @@ async def status():
         "message": "The city breathes at 40Hz."
     }
 
-@app.post("/analyze")
+@app.post("/analyze", dependencies=[Depends(verify_api_key)])
 async def analyze_coherence(request: CoherenceRequest):
     """
     Calculate Elysium Coherence Score from sensor data.
@@ -138,7 +175,7 @@ async def analyze_coherence(request: CoherenceRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.post("/health-projection")
+@app.post("/health-projection", dependencies=[Depends(verify_api_key)])
 async def health_projection(request: HealthProjectionRequest):
     """
     Get cellular health projections from sensor data.
@@ -162,7 +199,7 @@ async def health_projection(request: HealthProjectionRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.post("/predict")
+@app.post("/predict", dependencies=[Depends(verify_api_key)])
 async def predict_trend(request: TrendPredictionRequest):
     """
     Predict coherence trend using Monte Carlo simulation.
@@ -180,7 +217,7 @@ async def predict_trend(request: TrendPredictionRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.post("/protocol")
+@app.post("/protocol", dependencies=[Depends(verify_api_key)])
 async def get_protocol(request: ProtocolRequest):
     """
     Generate personalized 40Hz entrainment protocol.
