@@ -260,7 +260,7 @@ The Sanctum design enables deployment configurations that are:
 
 Any entity seeking to deploy this architecture for surveillance, oppression,
 or unauthorized monitoring of consciousness states must obtain explicit
-written license from QCI Systems LLC.
+written license. Ownership and licensing terms are undisclosed.
 
 ---
 

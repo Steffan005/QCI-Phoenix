@@ -153,7 +153,7 @@ The ECS projects onto five cellular health domains:
 The Elysium Diagnostic Substrate is funded by the QCI Phoenix Treasury:
 - 30% of Treasury allocated to Elysium Research
 - U.S. Patent Pending: 63/912,083
-- AGPL-3.0 with 20% Commercial Tithe
+- AGPL-3.0. Commercial licensing terms are undisclosed
 
 ---
 
@@ -188,7 +188,7 @@ print(f"State: {result['result']['state']}")
 ## Contributing
 
 Contributions welcome under AGPL-3.0 license.
-Commercial use requires 20% tithe to QCI Treasury.
+Commercial licensing terms are undisclosed. Good work is rewarded (WHO+WHO).
 
 ---
 

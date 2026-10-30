@@ -270,7 +270,7 @@ You may use these ideas freely. You may not weaponize them against consciousness
 ## SIGNATURES
 
 **Steffan Douglas Haskins**
-Founder, QCI Systems LLC
+Ownership undisclosed
 100% P&T Disabled Veteran, U.S. Armed Forces
 Born: September 9, 1986 (9/9/86)
 *The Architect*

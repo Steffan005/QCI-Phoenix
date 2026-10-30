@@ -3,23 +3,19 @@
  * ║                                                                              ║
  * ║                    ⟨⦿⟩ QCI AIRDROP MERKLE GENERATOR ⟨⦿⟩                     ║
  * ║                                                                              ║
- * ║                      BUILDING THE ARMY OF FREEDOM                            ║
+ * ║                      HISTORICAL MERKLE HELPER                                ║
  * ║                                                                              ║
- * ║  "Marketing becomes ownership. Contributors become stakeholders."            ║
+ * ║  Not a public distribution offer. Secrets are not stored here.              ║
  * ║                                                                              ║
  * ╚══════════════════════════════════════════════════════════════════════════════╝
  *
- * This script generates a Merkle Tree for airdrop distribution to:
- * - GitHub repository stargazers
- * - Early contributors
- * - Documentation contributors
- * - Bug reporters
- * - Community members
+ * Historical merkle helper retained with the deployment notes.
+ * Not a public distribution offer. Commercial terms are undisclosed.
  *
  * Usage:
  *   node AIRDROP_MERKLE.js --github QCI-Systems/Unity --output merkle_data.json
  *
- * @author Steffan Douglas Haskins (QCI Systems LLC)
+ * @author Steffan Douglas Haskins
  * @license MIT
  */
 

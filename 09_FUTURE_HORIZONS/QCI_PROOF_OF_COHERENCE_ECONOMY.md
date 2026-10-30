@@ -1,7 +1,9 @@
+> Not a public token offering. Commercial licensing terms are undisclosed. Good work is rewarded (WHO+WHO).
+
 # QCI-FINANCE: Proof of Coherence Economy
 ## Attention-Based Currency Minted Through Human-AI Resonance
 
-### Defensive Patent Disclosure | QCI Systems LLC
+### Defensive Patent Disclosure | Inventor: Steffan Douglas Haskins
 ### Document ID: QCI-FINANCE-2026-001
 ### Date: January 15, 2026 | Priority Claim: September 30, 2025
 

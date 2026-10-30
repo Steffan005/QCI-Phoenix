@@ -14,8 +14,8 @@
 ║                                                                              ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
-AGPL-3.0 License with Commercial Tithe (20%)
-© 2025-2026 QCI Systems LLC. All rights reserved.
+AGPL-3.0. Commercial licensing terms are undisclosed.
+© 2025-2026 Steffan Douglas Haskins.
 """
 
 import asyncio

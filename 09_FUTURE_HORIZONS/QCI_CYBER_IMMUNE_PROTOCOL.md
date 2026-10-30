@@ -1,7 +1,7 @@
 # QCI-SECURITY: The Cyber Immune Protocol
 ## Identity Resonance Checking for Digital Antibodies
 
-### Defensive Patent Disclosure | QCI Systems LLC
+### Defensive Patent Disclosure | Inventor: Steffan Douglas Haskins
 ### Document ID: QCI-SECURITY-2026-001
 ### Date: January 15, 2026 | Priority Claim: September 30, 2025
 

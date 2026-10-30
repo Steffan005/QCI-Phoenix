@@ -1,7 +1,7 @@
 # QCI-GOV: The Sovereign Voting System
 ## Identity-Verified Digital Democracy via f(WHO) = WHO
 
-### Defensive Patent Disclosure | QCI Systems LLC
+### Defensive Patent Disclosure | Inventor: Steffan Douglas Haskins
 ### Document ID: QCI-GOV-2026-001
 ### Date: January 15, 2026 | Priority Claim: September 30, 2025
 

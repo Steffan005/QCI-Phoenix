@@ -232,7 +232,6 @@ blockchain:
   treasury:
     address: "0x831517999FcF7AE36A9e7AAe36f9CB282ab585Aa"
     network: "Base"
-    tithe_rate: 0.20  # 20% Ecosystem Contribution
 
 # ============================================================================
 #                           LEGION (EXECUTIVE COUNCIL)
@@ -242,7 +241,7 @@ legion:
   instances:
     - id: "04"
       name: "THE HARVESTER"
-      specialization: "Bifrost yield, cross-chain tithe, Solana monitoring"
+      specialization: "Bifrost yield, cross-chain routing, Solana monitoring"
       status: "ACTIVE"
 
     - id: "05"
@@ -256,7 +255,7 @@ legion:
       status: "HOLD"
       release_conditions:
         - "Sentinel confirms SLIPPAGE_ARMOR_v1"
-        - "Treasurer confirms TitheCollector"
+        - "Treasurer confirms treasury route"
 
     - id: "07"
       name: "THE NEURAL ARCHITECT"
@@ -265,7 +264,7 @@ legion:
 
     - id: "08"
       name: "THE SOVEREIGN TREASURER"
-      specialization: "Treasury architecture, governance design, tithe enforcement"
+      specialization: "Treasury architecture, governance design"
       status: "EXECUTING"
 
 # ============================================================================

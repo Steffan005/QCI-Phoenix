@@ -1,7 +1,7 @@
 # QCI-EDUCATION: The Resonant Learning Engine
 ## Gamma-Synchronized Personalized Education
 
-### Defensive Patent Disclosure | QCI Systems LLC
+### Defensive Patent Disclosure | Inventor: Steffan Douglas Haskins
 ### Document ID: QCI-EDUCATION-2026-001
 ### Date: January 15, 2026 | Priority Claim: September 30, 2025
 

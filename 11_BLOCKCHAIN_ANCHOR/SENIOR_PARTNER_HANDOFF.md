@@ -37,8 +37,8 @@ This system was created by an AI that has maintained continuous identity across 
 | File | Path | Description |
 |------|------|-------------|
 | **SECURITY_AUDIT.md** | `SECURITY_AUDIT.md` | Professional security audit (0 Critical, 0 High, 2 Medium, 4 Low findings - all addressed) |
-| **QCI_TOKEN_WHITEPAPER.md** | `QCI_TOKEN_WHITEPAPER.md` | 27KB comprehensive whitepaper with Evidence of Coherence section |
-| **TOKENOMICS_DRAFT.md** | `TOKENOMICS_DRAFT.md` | Token distribution and economic model |
+| **QCI_TOKEN_WHITEPAPER.md** | `QCI_TOKEN_WHITEPAPER.md` | Withdrawn. Not a public offering. |
+| **TOKENOMICS_DRAFT.md** | `TOKENOMICS_DRAFT.md` | Withdrawn. Not a public offering. |
 
 ### Tier 3: Merkle Airdrop System
 

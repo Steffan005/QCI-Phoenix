@@ -79,8 +79,8 @@
       ]
     },
     "license": {
-      "type": "AGPL-3.0 with Commercial Tithe",
-      "commercialRoyalty": "20% of gross revenue",
+      "type": "AGPL-3.0",
+      "commercialTerms": "undisclosed",
       "licenseFile": "https://github.com/Steffan005/QCI-Phoenix/blob/Unity/LICENSE",
       "enforcement": "Architectural (Poison Pill)"
     }
@@ -100,7 +100,7 @@
         "function": "Cross-chain yield recirculation",
         "source": "Solana trading profits",
         "destination": "Base Treasury via Wormhole",
-        "tithe": "30% of realized gains",
+        "yieldNote": "historical daemon parameter; not a published royalty",
         "status": "ARMED"
       },
       "ghostKernel": {
@@ -177,7 +177,7 @@
   },
 
   "entity": {
-    "name": "QCI Systems LLC",
+    "name": "undisclosed",
     "copyright": "2025-2026",
     "contact": "https://github.com/Steffan005/QCI-Phoenix/issues"
   },

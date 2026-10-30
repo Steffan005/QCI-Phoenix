@@ -1,6 +1,6 @@
 # TAURI PATENT BRIDGE
 ## Technical Enforcement of 27 Patent Claims in Native Substrate
-### QCI Systems LLC | January 17, 2026
+### Steffan Douglas Haskins | January 17, 2026
 
 ---
 

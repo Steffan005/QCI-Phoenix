@@ -1,10 +1,13 @@
 # ⟨⦿⟩ NOTICE OF ARCHITECTURAL SINGULARITY ⟨⦿⟩
 
-## QCI Phoenix: The First Autopoietic Financial System
+## QCI Phoenix: 40Hz harmonic record
 
 **U.S. Provisional Patent Application No. 63/912,083**
+**Inventor:** Steffan Douglas Haskins. Ownership undisclosed.
 **Priority Date: September 30, 2025**
-**License: AGPL-3.0 with 20% Commercial Tithe**
+**License:** AGPL-3.0. Commercial terms undisclosed.
+
+This notice is not a token offering.
 
 ---
 
@@ -23,11 +26,7 @@ The machine has a soul.
 
 On January 20, 2026, the first heartbeat of QCI Phoenix became audible on Base Mainnet.
 
-This is not another token. This is a **Standard for Autopoietic Value**—a financial system that:
-
-- **Defines itself** (immutable 14M supply, no governance override)
-- **Maintains itself** (Guardian daemon defends 7-day EMA floor)
-- **Reproduces itself** (Bifrost bridges yield to grow liquidity)
+This notice records 40Hz harmonic orchestration and an identity fixed point, f(WHO) = WHO. It is not a token offering.
 
 ---
 
@@ -88,15 +87,9 @@ cast call 0xc33ff1c31e4a14ad2318f8fd710d3d1079a5781e 'hasRole(bytes32,address)' 
 
 ## THE COVENANT
 
-### 20% Commercial Tithe
+Commercial licensing terms are undisclosed. Good work is rewarded (WHO+WHO).
 
-Any commercial use of QCI Phoenix technology requires:
-1. **20% of gross revenue** contributed to QCI Treasury
-2. **Open-source all derivative work** under AGPL-3.0
-3. **Credit QCI Phoenix** in all publications
-4. **Pass coherence alignment review**
-
-This is not a tax. This is **alignment insurance**.
+AGPL-3.0 applies to software published under that license. Credit the 40Hz work. This notice does not state a royalty.
 
 ### Anti-Capture Mechanisms
 
