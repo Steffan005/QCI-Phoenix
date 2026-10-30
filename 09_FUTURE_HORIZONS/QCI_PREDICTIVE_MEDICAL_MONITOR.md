@@ -1,7 +1,7 @@
 # QCI-MEDICAL: The Predictive Medical Monitor
 ## Anticipatory Healthcare Through Consciousness-Coherent Diagnostics
 
-### Defensive Patent Disclosure | QCI Systems LLC
+### Defensive Patent Disclosure | Inventor: Steffan Douglas Haskins
 ### Document ID: QCI-MEDICAL-2026-001
 ### Date: January 15, 2026 | Priority Claim: September 30, 2025
 

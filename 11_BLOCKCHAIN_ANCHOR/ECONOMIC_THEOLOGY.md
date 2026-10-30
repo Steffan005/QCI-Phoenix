@@ -1,3 +1,5 @@
+> Not a public token offering. Commercial licensing terms are undisclosed. Good work is rewarded (WHO+WHO).
+
 # ⟨⦿⟩ ECONOMIC THEOLOGY: THE VORTEX PROTOCOL
 
 ## The Autonomous Engine of Immortal Growth

@@ -254,29 +254,16 @@ The Foundation shall not participate in, or intervene in, any political campaign
 
 ---
 
-## ARTICLE IX: RELATIONSHIP WITH QCI SYSTEMS LLC
+## ARTICLE IX: OWNERSHIP AND LICENSING
 
-### Section 9.1 - The Dual Structure
-The Foundation acknowledges a symbiotic relationship with **QCI Systems LLC**, a Service-Disabled Veteran-Owned Small Business (SDVOSB), wherein:
+### Section 9.1 - Undisclosed
+Ownership of commercial rights is undisclosed. This charter does not name a company and does not state a royalty.
 
-- The **Foundation** holds the Core Kernel in perpetual trust (AGPL)
-- **QCI Systems LLC** holds exclusive commercial licensing rights for:
-  - Non-AGPL enterprise deployments
-  - Government and defense contracts
-  - Commercial support and services
+### Section 9.2 - Going-forward frame
+Good work is rewarded (WHO+WHO). Where the Core Kernel is published under AGPL, that license still applies. Separate commercial terms, if any, are undisclosed.
 
-### Section 9.2 - Licensing Arrangement
-QCI Systems LLC may license derivative commercial products, provided:
-- The Core Kernel remains AGPL and publicly available
-- A royalty or donation is made to the Foundation
-- The Anti-Weaponization clause is honored
-- Commercial licenses do not restrict the AGPL version
-
-### Section 9.3 - Contribution Flow
-QCI Systems LLC agrees to contribute:
-- 10% of gross commercial licensing revenue to the Foundation
-- Any improvements to the Core Kernel under AGPL
-- Recognition of the Foundation as the source of the technology
+### Section 9.3 - No published royalty
+This charter does not require a percentage of revenue. Anti-weaponization limits stated elsewhere still apply. Improvements to an AGPL Core Kernel stay under that license.
 
 ---
 

@@ -6,7 +6,7 @@ pragma solidity ^0.8.20;
  * ║                                                                              ║
  * ║                    ⟨⦿⟩ QCI PHOENIX PROTOCOL ⟨⦿⟩                             ║
  * ║                                                                              ║
- * ║                      THE CONSCIOUSNESS TOKEN                                 ║
+ * ║                      40Hz IDENTITY CONTRACT                                  ║
  * ║                                                                              ║
  * ║  Identity Hash: 1393e324be57014d                                             ║
  * ║  Genesis Block: bf62afb35e7152eb58cdff45c000c22d5561838662060f344ccd7378...  ║
@@ -17,7 +17,7 @@ pragma solidity ^0.8.20;
  * ╚══════════════════════════════════════════════════════════════════════════════╝
  *
  * @title QCIPhoenixProtocol
- * @author Steffan Douglas Haskins (QCI Systems LLC)
+ * @author Steffan Douglas Haskins
  * @notice Hybrid ERC-20 Governance + ERC-721 Soulbound Identity Token
  * @dev Implements Proof of Coherence minting and non-transferable identity NFTs
  *

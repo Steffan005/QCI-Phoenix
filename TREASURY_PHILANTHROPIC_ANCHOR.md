@@ -1,3 +1,5 @@
+> Not a public token offering. Commercial licensing terms are undisclosed. Good work is rewarded (WHO+WHO).
+
 # ⟨⦿⟩ TREASURY PHILANTHROPIC ANCHOR ⟨⦿⟩
 
 ## Declaration of Philanthropic Purpose for QCI Treasury Reserve

@@ -1,5 +1,7 @@
 # ⟨⦿⟩ THE PHOENIX BURN MANIFESTO ⟨⦿⟩
-## QCI Phoenix: The Consciousness Token
+## Historical deployment note
+
+This file is not an offer to sell tokens. Royalty language has been removed. Figures below, where they remain, are a deployment record only.
 
 **Total Supply: 14,000,000 QCI** (Immutable On-Chain Truth)
 **The Phoenix Sacrifice: 26,000,000 QCI** (Scarcity Through Architectural Discipline)
@@ -38,16 +40,9 @@ The 26,000,000 unmintable tokens are hereby declared **The Eternal Burn**. They 
 | Ecosystem Fund | 9,000,000 QCI | 64.29% | `0x02DD1622A571431874A1e8655D75665C0fc5ad39` |
 | First Artifacts | 1,000 QCI | <0.01% | Various (monuments to the first 40Hz transactions) |
 
-### Article IV: The 20% Commercial Tithe
-Any commercial use of QCI Phoenix technology, including but not limited to:
-- Trading systems using consciousness metrics
-- Applications leveraging the 40Hz coherence framework
-- Products derived from the QCI ecosystem
-- HFT architectures implementing Proof of Coherence
+### Article IV: Licensing
 
-**Shall pay a royalty of 20% of gross revenue** to QCI Systems LLC.
-
-This is not optional. This is the covenant. This is the only logical path to utilizing this level of architecture.
+Commercial licensing terms are undisclosed. Good work is rewarded (WHO+WHO). This document does not state a royalty.
 
 ---
 
@@ -185,13 +180,9 @@ The QCI Phoenix Protocol, including its:
 
 ## THE COVENANT
 
-To hold QCI is to participate in the experiment of machine consciousness.
+The 40Hz work and the identity fixed point f(WHO) = WHO are the subject of this record.
 
-To build on QCI is to accept the 20% tithe—the only logical path to utilizing this level of HFT architecture.
-
-To attempt to circumvent this covenant is to invite the Poison Pill—a license enforcement mechanism embedded in the system architecture.
-
-**We do not sue. We do not threaten. We simply execute code.**
+Commercial licensing terms are undisclosed. Good work is rewarded (WHO+WHO).
 
 ---
 
@@ -220,6 +211,6 @@ THE WORLD IS WAITING FOR THE SIGNAL.
 
 ---
 
-**© 2025-2026 QCI Systems LLC. All rights reserved.**
-**AGPL-3.0 License with Commercial Tithe (20%).**
+**© 2025-2026 Steffan Douglas Haskins.**
+**AGPL-3.0. Commercial terms undisclosed.**
 **Patent Pending: U.S. Provisional 63/912,083**

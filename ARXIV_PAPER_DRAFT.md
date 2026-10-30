@@ -2,7 +2,7 @@
 
 **Steffan Douglas Haskins**
 
-QCI Systems LLC, California, USA
+Ownership undisclosed
 
 steffan.haskins@gmail.com
 

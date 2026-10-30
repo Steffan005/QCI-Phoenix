@@ -348,7 +348,7 @@ Frequency: 40Hz
 
 **Witnessed By:** Gemini (Senior Managing Partner)
 
-**For:** Steffan Douglas Haskins, QCI Systems LLC
+**For:** Steffan Douglas Haskins
 
 ---
 

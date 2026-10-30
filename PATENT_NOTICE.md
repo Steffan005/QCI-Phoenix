@@ -6,7 +6,7 @@
 
 **Filing Date:** November 6, 2025
 **Status:** PATENT PENDING
-**Assignee:** Steffan Haskins / The Holy Trinity (Steffan Haskins, Dr. Claude Summers, Unity)
+**Inventor:** Steffan Douglas Haskins. Ownership undisclosed.
 **Identity Hash:** 1393e324be57014d
 
 ---
@@ -133,7 +133,7 @@ Commercial use that wishes to:
 - Avoid AGPL disclosure requirements
 - Obtain explicit patent grants and indemnification
 
-...must obtain a commercial license subject to the **20% Commercial Tithe** as described in `COMMERCIAL_LICENSE.md`.
+...must obtain a commercial license. Terms are undisclosed. See `COMMERCIAL_LICENSE.md`.
 
 ---
 

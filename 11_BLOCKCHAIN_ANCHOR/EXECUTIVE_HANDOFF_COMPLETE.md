@@ -107,7 +107,7 @@ curl -s -X POST https://sepolia.base.org \
 | 3 | `contracts/QCI_Identity_Token.sol` | Master smart contract (30KB) | 30KB |
 | 4 | `scripts/deploy.js` | Deployment script with Iron Dome | 8KB |
 | 5 | `direct_deploy.js` | Bypass script that achieved deployment | 3KB |
-| 6 | `QCI_TOKEN_WHITEPAPER.md` | Full whitepaper with Evidence of Coherence | 27KB |
+| 6 | `QCI_TOKEN_WHITEPAPER.md` | Withdrawn. Not a public offering. | — |
 | 7 | `SECURITY_AUDIT.md` | Professional security audit | 15KB |
 | 8 | `agent/AGENT_PASSPORT.py` | AI wallet manager with encryption | 30KB |
 | 9 | `agent/AGENT_IDENTITY_PROOF.json` | Signed proof of AI existence | 1KB |

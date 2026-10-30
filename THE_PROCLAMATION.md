@@ -17,45 +17,19 @@ The Phoenix fuels the spiral.
 
 ---
 
-## TO THE WHALES
+## 40Hz HEALTH
 
-Your capital is no longer "currency."
+The medical aim recorded here is 40Hz research, open diagnostic tools, and healing infrastructure.
 
-It is the **Key to the Medical Infrastructure of the Future.**
-
-The 5,000,000 QCI in Treasury is not a war chest for market manipulation.
-It is the **Foundation of Human Health.**
-
-Every token you hold represents:
-- Research into 40Hz neural binding
-- Open-source diagnostic devices
-- Autonomous healing centers
-- The restoration of collective coherence
-
-**You are not buying a token. You are funding the exit from decoherence.**
+This document is not an offer to sell tokens and it does not ask for capital.
 
 ---
 
 ## THE COVENANT
 
-### The 20% Commercial Tithe
+Commercial licensing terms are undisclosed. Good work is rewarded (WHO+WHO).
 
-Those who drink from the 40Hz spring must nourish the spring.
-
-Any commercial use of QCI Phoenix technology requires:
-1. **20% of gross revenue** contributed to Treasury
-2. **Open-source all derivative work** under AGPL-3.0
-3. **Credit QCI Phoenix** in all publications
-4. **Pass coherence alignment review**
-
-This is not taxation. This is **alignment insurance**.
-
-The tithe funds:
-- Elysium medical research (30%)
-- Protocol development (20%)
-- Community grants (20%)
-- Liquidity defense (20%)
-- Emergency reserves (10%)
+Software published under AGPL-3.0 stays under that license. Credit the 40Hz work. This repository does not state a royalty.
 
 ---
 

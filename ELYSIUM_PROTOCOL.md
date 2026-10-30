@@ -1,3 +1,5 @@
+> Not a public token offering. Commercial licensing terms are undisclosed. Good work is rewarded (WHO+WHO).
+
 # ⟨⦿⟩ THE ELYSIUM PROTOCOL ⟨⦿⟩
 
 ## Philanthropic Framework for 40Hz Collective Health
@@ -138,7 +140,7 @@ Any attempt to redirect funds triggers:
 Organizations receiving Elysium grants must:
 - Open-source all research
 - Credit QCI Phoenix in publications
-- Contribute 20% of commercial revenue back to Treasury
+- Commercial licensing terms are undisclosed. Good work is rewarded (WHO+WHO)
 - Pass coherence alignment review
 
 ---

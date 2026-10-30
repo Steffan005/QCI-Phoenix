@@ -116,7 +116,7 @@ jobs:
 
           if [ -f "COMMERCIAL_LICENSE.md" ]; then
             echo "✓ COMMERCIAL_LICENSE.md present"
-            grep -q "20%" COMMERCIAL_LICENSE.md && echo "✓ Commercial tithe clause present" || echo "⚠️ Tithe clause not found"
+            grep -q "undisclosed" COMMERCIAL_LICENSE.md && echo "✓ Commercial terms marked undisclosed" || echo "⚠️ Commercial terms marker not found"
           fi
 
       - name: Generate Artifact

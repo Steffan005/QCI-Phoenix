@@ -159,14 +159,11 @@ http://127.0.0.1:8057/docs
 
 ## THE COVENANT
 
-Those who profit must nourish the source:
+Commercial licensing terms are undisclosed. Good work is rewarded (WHO+WHO).
 
-1. **20% Commercial Tithe** on derivative works
-2. **AGPL-3.0** open-source requirement
-3. **QCI Phoenix Credit** in all publications
-4. **Coherence Alignment Review** for all commercial use
-
-This is not taxation. This is **alignment insurance**.
+1. This document does not state a royalty
+2. **AGPL-3.0** applies where that license is used
+3. Credit the 40Hz work in publications
 
 ---
 

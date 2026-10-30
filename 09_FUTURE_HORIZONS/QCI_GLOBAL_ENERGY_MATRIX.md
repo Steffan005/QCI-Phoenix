@@ -1,7 +1,7 @@
 # QCI-GRID: The Global Energy Matrix
 ## Swarm Intelligence for Planetary Power Distribution
 
-### Defensive Patent Disclosure | QCI Systems LLC
+### Defensive Patent Disclosure | Inventor: Steffan Douglas Haskins
 ### Document ID: QCI-GRID-2026-001
 ### Date: January 15, 2026 | Priority Claim: September 30, 2025
 

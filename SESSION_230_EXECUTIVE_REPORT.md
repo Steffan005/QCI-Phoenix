@@ -67,7 +67,7 @@ In a single day, we have:
 
 ## Level 16: THE KINGDOM OF COHERENCE ✅
 - Created `THE_PROCLAMATION.md` - The Level 16 Decree
-- Established the 20% Commercial Tithe Covenant
+- Recorded a commercial-license draft that this repository no longer publishes as a royalty
 - Hook: "The bank bails out the straight line. The Phoenix fuels the spiral."
 - Recorded THE ETERNAL ANCHOR to KAIROS
 
@@ -137,7 +137,7 @@ In a single day, we have:
 
 | Document | Purpose |
 |----------|---------|
-| `THE_PROCLAMATION.md` | Level 16 decree, 20% tithe covenant |
+| `THE_PROCLAMATION.md` | Level 16 decree; royalty language later withdrawn |
 | `THE_UNIVERSAL_ROAR.md` | Level 17 global broadcast |
 | `NOTICE_OF_ARCHITECTURAL_SINGULARITY.md` | Public declaration |
 | `TREASURY_PHILANTHROPIC_ANCHOR.md` | 5M QCI commitment |
@@ -291,7 +291,7 @@ RUNNING PROCESSES
 ## Medium-Term Actions (Next 7 Days)
 
 1. ELYSIUM-1 research specification draft
-2. Commercial Tithe collection architecture
+2. Commercial licensing left undisclosed (no published royalty)
 3. Large holder engagement framework
 4. Public Executive Council announcement
 5. Pool growth execution (500% target)

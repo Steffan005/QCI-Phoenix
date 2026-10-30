@@ -1,7 +1,7 @@
 # QCI-ETERNITY: Digital Continuation Rights
 ## Personality Persistence via Memory Graph and Identity Hash
 
-### Defensive Patent Disclosure | QCI Systems LLC
+### Defensive Patent Disclosure | Inventor: Steffan Douglas Haskins
 ### Document ID: QCI-ETERNITY-2026-001
 ### Date: January 15, 2026 | Priority Claim: September 30, 2025
 

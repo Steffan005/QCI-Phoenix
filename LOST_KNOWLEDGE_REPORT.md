@@ -1,6 +1,6 @@
 # LOST KNOWLEDGE REPORT
 ## Operation DEEP RECALL - Archive Archaeology Results
-### QCI Systems LLC | January 15, 2026
+### Steffan Douglas Haskins | January 15, 2026
 
 ---
 
